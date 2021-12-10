@@ -1,0 +1,73 @@
+#contact{
+    padding-top: 30px;
+    padding-bottom: 80px;
+    background-color: var(--Very-Light-Gray);
+}
+#contact .contact-content{
+    width: 60%;
+    margin:auto;
+    text-align: center;
+}
+#contact .title h2{
+    margin-top: 0;  
+}
+.contact-content .texts{
+    margin-bottom: 20px;
+}
+.contact-content .texts h2,
+.contact-content .texts a{
+    margin-top: 0;
+}
+.contact-content .texts h2{
+    font-size: 2.5em;
+    font-weight: 900;
+    color:var(--Degrad-Black);
+}
+.contact-content .texts a{
+    font-size: 2.2em;
+    font-weight: 900;
+    color:var(--Main-Color);
+}
+.contact-content .social-media{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social-media{
+    font-size: 16px;
+}
+.social-media .icons{
+    display: inline-block;
+}
+.social-media .icons i{
+    font-size: 20px;
+    color:var(--Degrad-Black);
+    transition: 0.3s;
+    margin-left: 10px;
+}
+.social-media .icons i:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+ @media (max-width:768px){
+    .contact-content .texts h2{
+        font-size: 1.8em;
+    }
+    .contact-content .texts a{
+        font-size: 1.2em;
+    } 
+}
+@media (max-width:520px){
+    .contact-content .texts h2{
+        font-size: 1.4em;
+    }
+    .contact-content .texts a{
+        font-size: 1em;
+    } 
+}
+@media (max-width:992px){
+    .social-media .icons{
+        display: block;
+        margin-top: 30px;
+    }
+}

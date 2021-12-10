@@ -1,0 +1,75 @@
+/* services title css is a communal component (visit css/style.css)*/
+
+.services{
+    width:70%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap:30px;
+}
+.srv{
+    display: flex;
+    margin-bottom: 30px;
+}
+.srv i{
+    font-size: 30px;
+    color:var(--Main-Color);
+}
+.srv .texts{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right:0;
+    margin-left:20px;
+}
+.srv .texts h3{
+    margin:0 0 20px;
+}
+.srv .texts p{
+    word-break: break-all;
+    line-height: 1.8;
+}
+.design .image{
+    text-align: center;
+    position: relative;
+}
+.design .image::before {
+    content: "";
+    background-color: var(--Flower-Blue);
+    width: 100px;
+    height: calc(100% + 100px);
+    position: absolute;
+    top:-50px;
+    right: 0;
+    z-index:-1;
+    
+}
+.design .image img{
+    width: 250px;
+}
+
+/* responsive services content */
+@media (max-width:768px){
+    .services{
+        width: 80%;
+    }
+    .srv{
+        flex-direction: column;
+        text-align: center;
+        margin-left: auto; 
+        margin-right: auto;
+
+    }
+    .srv .texts{
+        margin-left: 0;
+    }
+    .srv .texts h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+/* hide image on width under 1370px */
+@media (max-width:1370px){
+    .design .hide-img{
+        display: none;
+    }
+}

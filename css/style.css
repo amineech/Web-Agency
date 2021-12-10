@@ -67,7 +67,7 @@ ul{
 
 /* Communal Components End */
 
-/* Foooter css code Start */
+/* Footer css code Start */
 footer{
     background-color: var(--Degrad-Black);
     padding-top: 20px;
@@ -84,4 +84,4 @@ footer .footer-content p{
 footer .footer-content p span{
     color: var(--Main-Color);
 }
-/* Foooter css code End */
+/* Footer css code End */
